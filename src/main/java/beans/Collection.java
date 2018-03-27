@@ -4,7 +4,7 @@ public class Collection {
 	private long id;
 	private String collectionOwner;
 	private double countItems;
-	private String collectionType;
+	private String collectorLevel;
 	private boolean locked;
 	
 	public Collection() {
@@ -15,16 +15,7 @@ public class Collection {
 		this.id = id;
 		this.collectionOwner = collectionOwner;
 		this.countItems = countItems;
-	}
-	
-	
-
-	public Collection(long id, String collectionOwner, double countItems, String collectionType) {
-		super();
-		this.id = id;
-		this.collectionOwner = collectionOwner;
-		this.countItems = countItems;
-		this.collectionType = collectionType;
+		this.collectorLevel = "novice";
 	}
 
 	public long getId() {
@@ -51,12 +42,12 @@ public class Collection {
 		this.countItems = countItems;
 	}
 
-	public String getCollectionType() {
-		return collectionType;
+	public String getCollectorLevel() {
+		return collectorLevel;
 	}
 
-	public void setCollectionType(String location) {
-		this.collectionType = location;
+	public void setCollectorLevel(String level) {
+		this.collectorLevel = level;
 	}
 
 	public boolean isLocked() {

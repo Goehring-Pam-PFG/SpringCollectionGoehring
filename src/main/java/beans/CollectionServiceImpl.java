@@ -35,4 +35,19 @@ public class CollectionServiceImpl implements CollectionService{
 	public Collection getCollection(long collectionId) {
 		return collectionDao.find(collectionId);
 	}
+	
+	public void setCollectorType (long collectionId) {
+		Collection collection = collectionDao.find(collectionId);
+		String orgCollectorLevel = collection.getCollectorLevel();
+		String newCollectorLevel;
+		final double MASTER = 500;
+		double count = collection.getCountItems();
+		if (count > MASTER) {
+			newCollectorLevel = "master";
+		} else {
+			newCollectorLevel = orgCollectorLevel;
+		}
+		collection.setCollectorLevel(newCollectorLevel);
+		
+	}
 }

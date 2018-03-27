@@ -8,8 +8,8 @@ import java.util.Map;
 public class CollectionDaoInMemoryImpl implements CollectionDao {
 	private Map<Long, Collection> collectionsMap = new HashMap<Long, Collection>();
 	{
-		Collection collection1 = new Collection (1L, "John Jay", 100, "books");		
-		Collection collection2 = new Collection (2L, "Susan Smith", 50, "books");
+		Collection collection1 = new Collection (1L, "John", 1000);		
+		Collection collection2 = new Collection (2L, "Susan", 500);
 				
 		collectionsMap.put(collection1.getId(), collection1);
 		collectionsMap.put(collection2.getId(), collection2);
