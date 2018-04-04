@@ -10,13 +10,23 @@
 </head>
 <body>
 	<h2>Collection Registration Form</h2>
-
 	<mvc:form modelAttribute="collection" action="result.mvc">
 		<table>
 			<tr>
-				<td><mvc:label path="collectionOwner">
-					</mvc:label></td>
+				<td><mvc:label path="collectionOwner">Collection Owner</mvc:label></td>
 				<td><mvc:input path="collectionOwner" /></td>
+			<tr>
+			<tr>
+				<td><mvc:label path="countItems">Count of Items</mvc:label></td>
+				<td><mvc:input path="countItems" /></td>
+			<tr>
+			<tr>
+				<td><mvc:label path="collectorLevel">Collector Level</mvc:label></td>
+				<td><mvc:input path="collectorLevel" /></td>
+<!-- 			<tr> -->
+<%-- 				<td><mvc:label path="collectionType">Collection Type</mvc:label></td> --%>
+<%-- 				<td><mvc:input path="collectionType" /></td> --%>
+<!-- 			<tr> -->
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>

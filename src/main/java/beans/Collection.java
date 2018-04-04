@@ -1,7 +1,17 @@
 package beans;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="collections")
 public class Collection {
-	private long id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
 	private String collectionOwner;
 	private double countItems;
 	private String collectorLevel;
@@ -11,7 +21,7 @@ public class Collection {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Collection(long id, String collectionOwner, double countItems) {
+	public Collection(int id, String collectionOwner, double countItems) {
 		this.id = id;
 		this.collectionOwner = collectionOwner;
 		this.countItems = countItems;
@@ -22,7 +32,7 @@ public class Collection {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
