@@ -29,7 +29,7 @@ public class CollectionController {
 			System.out.println("Value in getCollectionOwner" + collection.getCollectionOwner());
 			dao.insertCollection(collection);
 			modelAndView.setViewName("collectionResult");
-			modelAndView.addObject("u", collection);
+			modelAndView.addObject("c", collection);
 			return modelAndView;
 	}
 	

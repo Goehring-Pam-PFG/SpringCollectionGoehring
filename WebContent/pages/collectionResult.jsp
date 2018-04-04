@@ -13,19 +13,19 @@
 <table>
 <tr>
 <td> Collection Owner </td>
-<td>${u.collectionOwner}</td>
+<td>${c.collectionOwner}</td>
 </tr>
 <tr>
 <td> Count of Items </td>
-<td>${u.countItems}</td>
+<td>${c.countItems}</td>
 </tr>
 <tr>
 <td> Collector Level </td>
-<td>${u.collectorLevel}</td>
+<td>${c.collectorLevel}</td>
 </tr>
 <tr>
 <td> Collection Type </td>
-<td>${u.collectionType}</td>
+<td>${c.collectionType}</td>
 </tr>
 </table>
 <a href="viewAll.mvc">View All Collections</a>
