@@ -23,10 +23,10 @@
 			<tr>
 				<td><mvc:label path="collectorLevel">Collector Level</mvc:label></td>
 				<td><mvc:input path="collectorLevel" /></td>
-<!-- 			<tr> -->
-<%-- 				<td><mvc:label path="collectionType">Collection Type</mvc:label></td> --%>
-<%-- 				<td><mvc:input path="collectionType" /></td> --%>
-<!-- 			<tr> -->
+			<tr>
+				<td><mvc:label path="collectionType">Collection Type</mvc:label></td>
+				<td><mvc:select path="collectionType" items="${collectionTypes}" /></td>
+			<tr>
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>

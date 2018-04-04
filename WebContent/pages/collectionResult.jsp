@@ -23,6 +23,10 @@
 <td> Collector Level </td>
 <td>${u.collectorLevel}</td>
 </tr>
+<tr>
+<td> Collection Type </td>
+<td>${u.collectionType}</td>
+</tr>
 </table>
 <a href="viewAll.mvc">View All Collections</a>
 </body>

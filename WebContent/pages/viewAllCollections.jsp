@@ -24,6 +24,10 @@
 				<td>Collector Level</td>
 				<td>${item.collectorLevel}</td>
 			</tr>
+			<tr>
+				<td>Collection Type</td>
+				<td>${item.collectionType}</td>
+			</tr>
 		</table>
 		<br />
 		<hr style="text-align: left; margin-left: 0; width: 25%">

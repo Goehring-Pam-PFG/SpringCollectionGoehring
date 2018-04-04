@@ -15,6 +15,7 @@ public class Collection {
 	private String collectionOwner;
 	private double countItems;
 	private String collectorLevel;
+	private String collectionType;
 	private boolean locked;
 	
 	public Collection() {
@@ -58,6 +59,14 @@ public class Collection {
 
 	public void setCollectorLevel(String level) {
 		this.collectorLevel = level;
+	}
+	
+	public String getCollectionType() {
+		return collectionType;
+	}
+
+	public void setCollectionType(String collectionType) {
+		this.collectionType = collectionType;
 	}
 
 	public boolean isLocked() {

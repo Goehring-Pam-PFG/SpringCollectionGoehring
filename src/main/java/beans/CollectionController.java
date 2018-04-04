@@ -11,12 +11,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class CollectionController {
 	@Autowired CollectionDao dao;
+	private static final String[] collectionTypes = {"books", "records", "trains", "pens"};
 	
 	@RequestMapping(value = "/form")
 		public ModelAndView collection() {
 			ModelAndView modelAndView = new ModelAndView();
 			modelAndView.setViewName("collectionForm");
 			modelAndView.addObject("collection", new Collection());
+			modelAndView.addObject("collectionTypes", collectionTypes);
 			return modelAndView;
 	}
 	
