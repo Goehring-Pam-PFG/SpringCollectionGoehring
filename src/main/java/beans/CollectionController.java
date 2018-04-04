@@ -1,5 +1,7 @@
 package beans;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,15 @@ public class CollectionController {
 			dao.insertCollection(collection);
 			modelAndView.setViewName("collectionResult");
 			modelAndView.addObject("u", collection);
+			return modelAndView;
+	}
+	
+	@RequestMapping(value = "/viewAll")
+		public ModelAndView viewAll() {
+			ModelAndView modelAndView = new ModelAndView();
+			List<Collection> allCollections = dao.getAllCollections();
+			modelAndView.setViewName("viewAllCollections");
+			modelAndView.addObject("all", allCollections);
 			return modelAndView;
 	}
 	
